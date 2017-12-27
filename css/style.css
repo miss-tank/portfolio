@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu Condensed', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #656c6d;
@@ -94,7 +94,9 @@ hr {
 	padding: 10px 0;
 }
 .navbar-custom .navbar-brand {
-	font-weight: 600;
+	
+	letter-spacing: 1px;
+	word-spacing: 8px;
 }
 .navbar-custom .navbar-brand:focus {
 	outline: 0;
@@ -111,8 +113,9 @@ hr {
 	color: #f4f5f6;
 }
 .navbar-custom .nav li a {
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	
+	letter-spacing: 2px;
+	font-size: 20px;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
@@ -142,7 +145,7 @@ hr {
 	border-color: #fff;
 	padding: 10px 20px;
 	margin: 0;
-	font-size: 16px;
+	font-size: 21px;
 	border-radius: 0;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
@@ -173,7 +176,7 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/intro-bg.jpg) no-repeat center top;
+	background: url(../img/p2.jpg) no-repeat center top;
 	background-color: #7bc3d1;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -187,15 +190,20 @@ hr {
 #about {
 	padding: 100px 0;
 	background: #f6f6f6;
+	font-family: 'Ubuntu Condensed', sans-serif;
+
 }
 #about .about-text {
 	margin-left: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+
 }
 #about img {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	display: inline-block;
+
 }
 #about p {
 	margin-top: 20px;
@@ -208,6 +216,8 @@ hr {
 }
 #skills h2 {
 	color: #fff;
+	
+
 }
 #skills hr {
 	background: rgba(255,255,255,0.3);
@@ -272,7 +282,8 @@ ol.type li {
 ol.type li a {
 	background: #7bc3d1;
 	color: #fff;
-	padding: 6px 14px;
+	padding: 7px 14px;
+	font-size: 17px;
 }
 ol.type li a.active {
 	background: #121d1f;
@@ -641,9 +652,41 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #fff;
 }
 .intro H1 {
-	font-size: 60px;
+	font-size: 140px;
+	margin-top: 0px;
 	font-weight: 500;
 	letter-spacing: -2px;
+	
+	color: #ffffffd6;
+	letter-spacing: -2px;
+	-webkit-box-sizing: content-box;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.myName
+{
+
+	font-size: 200px;
+	margin-top: -208px;
+	font-weight: 500;
+	letter-spacing: -2px;
+	margin-left: 350;
+	color: #ffffff99;
+	-webkit-box-sizing: content-box;
+	letter-spacing: -2px;
+	font-family: 'Rajdhani', sans-serif;
+
+}
+.intro-next
+{
+	font-size: 200px;
+	margin-top: -208px;
+	font-weight: 500;
+	letter-spacing: -2px;
+	margin-left: 350;
+	color: #ffffff99;
+	letter-spacing: -2px;
+	font-family: 'Rajdhani', sans-serif;
 }
 .intro .name {
 	font-weight: 600;
@@ -652,10 +695,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	max-width: 75%;
 }
 .intro .intro-text p {
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 27px;
 	margin-bottom: 40px;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 section {
 	padding: 120px 0;
@@ -675,7 +718,7 @@ header .intro-text {
 	float: left;
 	width: 41%;
 	padding: 0 20px 20px 30px;
-	text-align: right;
+	text-align: justify;
 }
 .timeline>li .timeline-image {
 	left: 50%;

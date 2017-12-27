@@ -1087,7 +1087,7 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -1269,7 +1269,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 48px;
 }
 h2,
 .h2 {
@@ -2984,10 +2984,12 @@ select[multiple].form-group-lg .form-control {
   }
 }
 .btn {
-  display: inline-block;
+
+
+
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -4175,8 +4177,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 36px;
   line-height: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4222,6 +4226,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+      font-family: 'Rajdhani', sans-serif;
+
 }
 .navbar-nav > li > a {
   padding-top: 10px;

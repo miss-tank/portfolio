@@ -246,6 +246,44 @@
 
 .btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #000000;
+}
+
+.button5:hover {
+    background-color: #00000000;
+    color: white;
+}
+.hed
+{
+  font-size: 105px;
+  margin-top: -208px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-left: 350;
+  color: #ffffff99;
+  letter-spacing: -2px;
+  -webkit-box-sizing: content-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
 </style>
 
 
@@ -255,7 +293,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ankita Tank - Android & Front End Developer</title>
+  <title>AT | Ankita Tank</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -264,10 +302,12 @@
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
 <!-- Stylesheet
   ================================================== -->
@@ -275,7 +315,8 @@
   <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Rajdhani" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -291,8 +332,8 @@
         <div class="container">
           <div class="row">
             <div class="intro-text">
-              <h1>Hello, I'm <span class="name">Ankita Tank</span></h1>
-              <p>Android & Front End Developer</p>
+              <h1 class="head">Ankita Tank</h1>
+              <p>Android & Web Developer</p>
               <a href="#about" class="btn btn-default btn-lg page-scroll">More About Me</a>
             </div>
           </div>
@@ -330,11 +371,14 @@
               <hr>
             </div>
             <div class="row">
-              <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
+              <div class="col-md-12 text-center"><img src="img/me.jpg" class="img-responsive"></div>
               <div class="col-md-8 col-md-offset-2">
                 <div class="about-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                  <p>
+
+      I am a great Web and Android developer. I am a senior programmer with good knowledge of front-end techniques, Object oriented programming, Design Patterns and much more. I am currently working with BMW and Chicago Transit Authority. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team. As the saying goes: 'Two heads are better than one'. </p>
                   <p class="text-center"><a class="btn btn-primary" href="Ankita-Tank-Resume.pdf" download><i class="fa fa-download"></i> Download My Resume</a></p>
                 </div>
               </div>
@@ -344,41 +388,38 @@
         <!-- Skills Section -->
         <div id="skills" class="text-center">
           <div class="section-title center text-center ">
-            <h2>Skills</h2>
+            <h2>SKILLS</h2>
             <hr>
           </div>
           <div class="row">
-            <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-              <h4>Java - Android Development</h4>
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+              <h4>Android Development</h4>
             </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="40"> <span class="percent">40</span> </span>
+              <h4>iOS Development</h4>
+            </div>
+
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
               <h4>SQL</h4>
             </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-              <h4>C++</h4>
+               <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">70</span> </span>
+              <h4>Java , C++ </h4>
             </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
-              <h4>C</h4>
+        
+            
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
+              <h4>C# , F# , C</h4>
             </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-              <h4>C# , F#</h4>
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
+              <h4>HTML5, CSS3, PHP </h4>
             </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
-              <h4>HTML5</h4>
+          
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+              <h4>JavaScript,jQuery</h4>
             </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
-              <h4>CSS3</h4>
-            </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>jQuery</h4>
-            </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>PHP</h4>
-            </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>JavaScript</h4>
-            </div>
-            <div class="col-md-2 col-sm-4 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
               <h4>ASP.NET</h4>
             </div>
 
@@ -388,7 +429,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
         </script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+ <!--
     <div id="template" class="col-lg-3 col-sm-6 hidden">
       <div class="card hovercard" id="kk">
 
@@ -409,7 +450,6 @@
 
 
    <script>
-
 
 
     var project_list= [
@@ -470,7 +510,7 @@
 
 
 
- <!--
+
 <div id="template" class="col-lg-3 col-sm-6 hidden">
             <div class="card hovercard" id="kk">
 
@@ -523,7 +563,7 @@ Portfolio Section -->
 <div id="portfolio">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>Portfolio</h2>
+      <h2>PROTFOLIO</h2>
       <hr>
     </div>
         <div class="categories">
@@ -532,85 +572,187 @@ Portfolio Section -->
               <ol class="type">
                 <li><a href="#" data-filter="*" class="active">All</a></li>
                 <li><a href="#" data-filter=".web">Web Design</a></li>
-                <li><a href="#" data-filter=".app">App Development</a></li>
-                <li><a href="#" data-filter=".branding">Branding</a></li>
+                <li><a href="#" data-filter=".app">Android App Development</a></li>
+                <li><a href="#" data-filter=".ios">iOS App Development</a></li>
+                <li><a href="#" data-filter=".prog">Programming Paradigm</a></li>
               </ol>
             </li>
           </ul>
           <div class="clearfix"></div>
         </div>
+
         <div class="row">
           <div class="portfolio-items">
-            <div class="col-sm-6 col-md-3 col-lg-3 web">
-              <div class="portfolio-item">
-                <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project description" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Project Title</h4>
-                    <small>Web Design</small> </div>
-                    <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 app">
-                  <div class="portfolio-item">
-                    <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project description" rel="prettyPhoto">
-                      <div class="hover-text">
-                        <h4>Project Title</h4>
-                        <small>App Development</small> </div>
-                        <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3 web">
+
+                    <div class="col-sm-6 col-md-3 col-lg-3 app">
                       <div class="portfolio-item">
-                        <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project description" rel="prettyPhoto">
+                        <div class="hover-bg"> <a href="img/project/coffee.jpeg" title="Simple android application containing 2 activities. This app allows user to order the coffee of their style. It manually allows you to enter the amount of ingredients such as Caffine, Whip Cream, etc., which will make your day even better... " rel="prettyPhoto">
                           <div class="hover-text">
-                            <h4>Project Title</h4>
-                            <small>Web Design</small> </div>
-                            <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                            <h4>Perfect Coffee</h4>
+                            <small>Android Application </small> </div>
+                            <img src="img/project/coffee.jpeg" class="img-responsive" alt="Perfect Coffee - Android Application"> </a> </div>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 app">
                           <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project description" rel="prettyPhoto">
+                            <div class="hover-bg"> <a href="img/project/car.jpg" title="Project description" rel="prettyPhoto">
                               <div class="hover-text">
-                                <h4>Project Title</h4>
-                                <small>Web Design</small> </div>
-                                <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                <h4>Auto Gallery</h4>
+
+                                <small>Android Application</small> </div>
+                                <img src="img/project/car.jpg" class="img-responsive" alt="Project Title"> </a> </div>
                               </div>
                             </div>
-                            <div class="col-sm-6 col-md-3 col-lg-3 app">
-                              <div class="portfolio-item">
-                                <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project description" rel="prettyPhoto">
-                                  <div class="hover-text">
-                                    <h4>Project Title</h4>
-                                    <small>App Development</small> </div>
-                                    <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+
+
+                            <div class="col-sm-6 col-md-3 col-lg-3 prog">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="img/project/encryp.jpg" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>RSA</h4>
+
+                                <small>Java Program</small> </div>
+                                <img src="img/project/encryp.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                              </div>
+                            </div>
+
+
+                                <div class="col-sm-6 col-md-3 col-lg-3 prog">
                                   <div class="portfolio-item">
-                                    <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project description" rel="prettyPhoto">
+                                    <div class="hover-bg"> <a href="img/project/cta1.jpg" title="Project description" rel="prettyPhoto">
                                       <div class="hover-text">
-                                        <h4>Project Title</h4>
-                                        <small>Branding</small> </div>
-                                        <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                        <h4>CTA Ridership Analysis </h4>
+
+                                        <!--This is One of the UIC class project. In this project I have analysed CTA data from a CSV and showed all the station and the stops associated with it. The data is represented in a form of a GUI which makes the User search for a sepecific station easier. The GUI show the Stops, Station, ColoredLine, Transfer station with that stop, Number of riders using the stop per day. The GUI further classifies the Riders into gender and the day of use.-->
+                                        <small>C#, Sql</small> </div>
+                                        <img src="img/project/cta1.jpg" class="img-responsive" alt="Project Title"> </a> </div>
                                       </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-3 col-lg-3 branding app">
+
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3  prog">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/divvy.jpg" title="Project description" rel="prettyPhoto">
                                           <div class="hover-text">
-                                            <h4>Project Title</h4>
-                                            <small>App Development, Branding</small> </div>
-                                            <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <h4>Divvy Bike Ridership Analysis</h4>
+                                            <!--This is One of the UIC class project. In this project I have analysed Divvy Bike's data from a CSV file. The data used is from 2014-2016. The data is represented in a form of a GUI which makes the User search for a specific ridership. The GUI the total number of riders with respect to their age and gender. The data shown is displayed according to every 6 months. This also helps analyse the time of the day or year the bikes are used more.-->
+                                            <small>F# , MySQL</small> </div>
+                                            <img src="img/project/divvy.jpg" class="img-responsive" alt="Project Title"> </a> </div>
                                           </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3  app">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/cash.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Federal Cash Data</h4>
+                                            <small>json</small> </div>
+                                            <img src="img/project/cash.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3  app">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/chicago.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Chicago Landmarks</h4>
+                                            <small>Threading </small> </div>
+                                            <img src="img/project/chicago.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3 prog">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/sudoku.png" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Sudoku</h4>
+                                            <small>Threading </small> </div>
+                                            <img src="img/project/sudoku.png" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-3 col-lg-3  web">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/cta2.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Transit ETA </h4>
+                                            <small>Threading </small> </div>
+                                            <img src="img/project/cta2.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>
+
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3  web">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/food.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Chicago Food Inspection</h4>
+                                            <small>JavaScript </small> </div>
+                                            <img src="img/project/food.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3  web">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/weather.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Check Weather Offline</h4>
+                                            <small>JavaScript </small> </div>
+                                            <img src="img/project/weather.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>        
+
+                                      <div class="col-sm-6 col-md-3 col-lg-3 app">
+                                        <div class="portfolio-item">
+                                          <div class="hover-bg"> <a href="img/project/addcontact.jpg" title="Project description" rel="prettyPhoto">
+                                            <div class="hover-text">
+                                              <h4>Add Contacts </h4>
+                                              <!-- The
+app starts off with a main activity containing a welcome message and a button. Upon pressing the button,
+the app displays a second activity containing a one-line editor field, a button, and a read-only text view.
+The second activity allows the interactive user to enter the first and last names of a person in the editor field.
+When the button in his activity is pressed, your app switches to a different app for adding a new contact with
+the specified first and last name. Now the device&rsquo;s user has a
+chance to enter the new contact&rsquo;s information. The contacts app must return automatically to your app
+when a user saves a new contact. Either way, when your app resumes it will display
+a message in the read-only text field indicating whether the user had successfully saved the new contact or
+not.  -->
+                                              <small>Android Application</small> </div>
+                                              <img src="img/project/addcontact.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            </div>
+                                          </div>
+
+                                    <div class="col-sm-6 col-md-3 col-lg-3  app">
+                                      <div class="portfolio-item">
+                                        <div class="hover-bg"> <a href="img/project/guess.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-text">
+                                            <h4>Guess 4</h4>
+                                            <small>Threading</small> </div>
+                                            <img src="img/project/guess.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6 col-md-3 col-lg-3 app">
                                           <div class="portfolio-item">
-                                            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project description" rel="prettyPhoto">
+                                            <div class="hover-bg"> <a href="img/project/htDesgin.jpg" title="HT Design, Android Application"  rel="prettyPhoto">
                                               <div class="hover-text">
-                                                <h4>Project Title</h4>
-                                                <small>Web Design</small> </div>
-                                                <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                                <h4>HT Designs </h4>
+                                                <!-- Simple android application with 2 activities. This application describes the website htdesigns.in which consists of the portfolio of an automobile engineer Harshad Tank and gives a summary of his work and an onclick event which will link user to his website.-->
+                                                <small>Android Application </small> </div>
+                                                <img src="img/project/htDesgin.jpg" class="img-responsive" title="HT Design, Android Application" alt="HT Design "> </a> </div>
+                                              </div>
+                                            </div>
+
+                                        <div class="col-sm-6 col-md-3 col-lg-3 ios">
+                                          <div class="portfolio-item">
+                                            <div class="hover-bg"> <a href="img/project/map.jpg" title="Project description" rel="prettyPhoto">
+                                              <div class="hover-text">
+                                                <h4>UIC Navigation</h4>
+                                                <small>iOS Application </small> </div>
+                                                <img src="img/project/map.jpg" class="img-responsive" alt="Project Title"> </a> </div>
                                               </div>
                                             </div>
                                           </div>
@@ -619,34 +761,53 @@ Portfolio Section -->
                                     </div>
                                     <!-- Achievements Section -->
 
-
-
-
-
-
                                     <!-- Resume Section -->
                                     <div id="resume" class="text-center">
                                       <div class="container">
-                                        <div class="section-title center">
-                                          <h2>Experience</h2>
+                                        <div class="">
+                                          <h1>EXPERIENCE</h1>
                                           <hr>
                                         </div>
                                         <div class="row">
                                           <div class="col-lg-12">
                                             <ul class="timeline">
-                                              <li>
+
+
+                                              <li class="timeline-inverted">
                                                 <div class="timeline-image">
-                                                  <h4>Sept 2017 <br>
+                                                  <h4>Jan 2018 <br>
                                                     - <br>
-                                                  Present </h4>
+                                                  May 2018 </h4>
                                                 </div>
                                                 <div class="timeline-panel">
                                                   <div class="timeline-heading">
                                                     <h4>Chicago Transit Authority</h4>
-                                                    <h4 class="subheading">Anomoly Detection Intern</h4>
+                                                    <h4 class="subheading">Android Development Intern</h4>
                                                   </div>
                                                   <div class="timeline-body">
-                                                    <p>Assist the Ridership Analysis and Reporting group with developing a consistent analysis framework to detect  changes in ridership for planning purposes and potential errors in data processing.To develop and implement an algorithm to analyze and report abnormal events based on ridership information, historical knowledge, and other common external variables that affect ridership.</p>
+                                                    <p> &#x265B; YET TO BE DIFINED </p>
+                                                    
+                                                  </div>
+                                                </div>
+                                              </li>
+
+
+                                              <li>
+                                                <div class="timeline-image">
+                                                  <h4>Sept 2017 <br>
+                                                    - <br>
+                                                  Dec 2017 </h4>
+                                                </div>
+                                                <div class="timeline-panel">
+                                                  <div class="timeline-heading">
+                                                    <h4>Chicago Transit Authority</h4>
+                                                    <h4 class="subheading">Service Bulletin Webform Implementation Intern</h4>
+                                                  </div>
+                                                  <div class="timeline-body">
+                                                    <p>&#10132;Assisted Planning and Operations Department to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;develop a web framework which creates reroute changes &nbsp;&nbsp;&nbsp;&nbsp; for the CTA buses.</p>
+                                                      <p>&#10132;Developed and implemented algorithms to generate &nbsp;&nbsp;&nbsp;&nbsp;PDF based on the multiple routes entered and detects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;routes which share the same reroute.</p>
+                                                           <p>&#10132;Manage the Oracle database which is used while loading &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous
+                                                              bulletin data.</p>
                                                   </div>
                                                 </div>
                                               </li>
@@ -663,7 +824,10 @@ Portfolio Section -->
                                                     <h4 class="subheading">Junior Web Developer</h4>
                                                   </div>
                                                   <div class="timeline-body">
-                                                    <p>Provided maintenance and development of bug fixes and patch sets for existing web applications.Written well designed, testable, efficient code by using best software development practices.Creating website layout/user interfaces by using standard HTML5/CSS3 practices.Integrating data from various back-end services and databases</p>
+                                                    <p> &#x27A0; Provided maintenance and development of bug fixes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and patch sets for existing web applications.</p>
+                                                    <p> &#x27A0; Written well designed, testable, efficient code by using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best software development practices.</p>
+                                                    <p> &#x27A0; Creating website layout/user interfaces by using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standard HTML5/CSS3 practices.</p>
+                                                    <p> &#x27A0; Integrating data from various back-end services and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;databases</p>
                                                   </div>
                                                 </div>
                                               </li>
@@ -681,7 +845,8 @@ Portfolio Section -->
                                                     <h4 class="subheading">Computer Specialist 1 </h4>
                                                   </div>
                                                   <div class="timeline-body">
-                                                    <p>Installed software, modified and repaired hardware and resolved technical issues.Set up equipment for employee use, performing or ensuring proper installation of cable, operating systems, and appropriate software. </p>
+                                                    <p>&#x261B; Installed software, modified and repaired hardware and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolved technical issues.</p>
+                                                    <p>&#x261B; Set up equipment for employee use, performing or &nbsp;&nbsp;ensuring proper installation of different operating &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;systems, and appropriate software. </p>
                                                   </div>
                                                 </div>
                                               </li>
@@ -698,7 +863,9 @@ Portfolio Section -->
                                                     <h4 class="subheading">Teaching Assistant</h4>
                                                   </div>
                                                   <div class="timeline-body">
-                                                    <p>Assist with labs and discussion sections, hold office hours, grade class projects.Attend weekly course  staff meetings,and helped maintain the course website.</p>
+                                                    <p>&diams; Assist with labs and discussion sections, hold office  &nbsp;&nbsp;&nbsp;&nbsp;hours, grade class projects.Attend weekly course staff &nbsp;&nbsp;&nbsp;&nbsp;meetings, and helped maintain the course website.</p>
+
+                                                   <p> &diams; Managed grading, proctored exams, as well as promptly &nbsp;&nbsp;&nbsp;&nbsp;resolved students' questions pertaining to Computer &nbsp;&nbsp;&nbsp;&nbsp;Science 300 level classes.</p>
                                                   </div>
                                                 </div>
                                               </li>
@@ -711,7 +878,7 @@ Portfolio Section -->
                                       </div>
                                       <div class="container">
                                         <div class="section-title center">
-                                          <h2>Education</h2>
+                                          <h1>EDUCATION</h1>
                                           <hr>
                                         </div>
                                         <div class="row">
@@ -761,7 +928,7 @@ Portfolio Section -->
                                     <div id="contact" class="text-center">
                                       <div class="container">
                                         <div class="section-title center">
-                                          <h2>Contact</h2>
+                                          <h2>CONTACT</h2>
                                           <hr>
                                         </div>
                                         <div class="col-md-8 col-md-offset-2">
@@ -799,12 +966,29 @@ Portfolio Section -->
                                               <p class="help-block text-danger"></p>
                                             </div>
                                             <div id="success"></div>
-                                            <button type="submit" class="btn btn-default">Send Message</button>
+                                            <button  type="submit" class="button button5" onclick="send_message()">Send Message</button>
+                                            <script type="text/javascript">
+                                              function send_message(){
+                                             var email = 'tankankita02@gmail.com';
+                                            var subject = 'Ankita Tank || Message From Website';
+                                            var body_message = document.getElementById("message").value;
+                                            console.log("this is teh body ");
+                                            console.log(body_message);
+                                            //clear all fields
+                                         // $('#contactForm').trigger("reset");
+                                              var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
+                                           win = window.open(mailto_link, 'emailWindow');
+                                           if (win && win.open && !win.closed) win.close();
+                                          }
+                                            </script>
+
+
+
                                           </form>
                                           <div class="social">
                                             <ul>
-                                              <li><a href="https://www.linkedin.com/in/ankita-tank-a7b9668a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                              <li><a href="https://github.com/tankankita" target="_blank"><i class="fa fa-github"></i></a></li>
+                                              <li><a href="https://www.linkedin.com/in/ankitatank/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                              <li><a href="https://github.com/miss-tank" target="_blank"><i class="fa fa-github"></i></a></li>
                                               <li><a href="https://www.facebook.com/ankita.tank.71" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                               <li><a href="https://www.instagram.com/miss__tank/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
                                             </ul>
