@@ -89,12 +89,12 @@ hr {
 }
 .navbar-custom {
 	margin-bottom: 0;
-	background-color: #121d1f;
+	background-color: #0000007d;
 	border-radius: 0px;
 	padding: 10px 0;
 }
 .navbar-custom .navbar-brand {
-	
+
 	letter-spacing: 1px;
 	word-spacing: 8px;
 }
@@ -113,7 +113,7 @@ hr {
 	color: #f4f5f6;
 }
 .navbar-custom .nav li a {
-	
+
 	letter-spacing: 2px;
 	font-size: 20px;
 	-webkit-transition: background .3s ease-in-out;
@@ -176,11 +176,11 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/p2.jpg) no-repeat center top;
-	background-color: #7bc3d1;
+	background: url(../img/p4.jpg) no-repeat center top;
+	background-color: #000000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
+	background-size: contain;
 	-o-background-size: cover;
 }
 .section-title.center {
@@ -216,7 +216,7 @@ hr {
 }
 #skills h2 {
 	color: #fff;
-	
+
 
 }
 #skills hr {
@@ -656,7 +656,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 0px;
 	font-weight: 500;
 	letter-spacing: -2px;
-	
+
 	color: #ffffffd6;
 	letter-spacing: -2px;
 	-webkit-box-sizing: content-box;
