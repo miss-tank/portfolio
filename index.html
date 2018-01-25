@@ -390,7 +390,7 @@
       <p>I am currently working with BMW and Chicago Transit Authority. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team. As the saying goes: 'Two heads are better than one'. </p>
     </div>
 
-                  <p class="text-center"><a class="btn btn-primary" href="Ankita-Tank-Resume.pdf" download><i class="fa fa-download"></i> Download My Resume</a></p>
+                  <p class="text-center"><a class="btn btn-primary" href="Ankita Tank-Resume.pdf" download><i class="fa fa-download"></i> Download My Resume</a></p>
                 </div>
               </div>
             </div>
@@ -407,7 +407,7 @@
               <h4>Android Development</h4>
             </div>
 
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="40"> <span class="percent">40</span> </span>
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
               <h4>iOS Development</h4>
             </div>
 
@@ -959,46 +959,33 @@ not.  -->
                                           <div class="clearfix"></div>
                                         </div>
                                         <div class="col-md-8 col-md-offset-2">
-                                          <h3>Leave me a message</h3>
-                                          <form name="sentMessage" id="contactForm" novalidate>
-                                            <div class="row">
-                                              <div class="col-md-6">
-                                                <div class="form-group">
-                                                  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                                                  <p class="help-block text-danger"></p>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-6">
-                                                <div class="form-group">
-                                                  <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                                                  <p class="help-block text-danger"></p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="form-group">
-                                              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                                              <p class="help-block text-danger"></p>
-                                            </div>
+
+
                                             <div id="success"></div>
-                                            <button  type="submit" class="button button5" onclick="send_message()">Send Message</button>
-                                            <script type="text/javascript">
-                                              function send_message(){
-                                             var email = 'tankankita02@gmail.com';
-                                            var subject = 'Ankita Tank || Message From Website';
-                                            var body_message = document.getElementById("message").value;
-                                            console.log("this is teh body ");
-                                            console.log(body_message);
-                                            //clear all fields
-                                         // $('#contactForm').trigger("reset");
-                                              var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
-                                           win = window.open(mailto_link, 'emailWindow');
-                                           if (win && win.open && !win.closed) win.close();
-                                          }
-                                            </script>
+                                            <button  type="submit" class="button button5" onclick="sendEmail()">Leave me a message</button>
 
 
 
-                                          </form>
+
+
+
+
+
+
+</form>
+
+
+
+<script type="text/javascript">
+
+function sendEmail()
+{
+  console.log("sending emial");
+    window.location = "mailto:tankankita02@gmail.com?subject=Email From Website.";
+}
+
+</script>
+
                                           <div class="social">
                                             <ul>
                                               <li><a href="https://www.linkedin.com/in/ankitatank/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
