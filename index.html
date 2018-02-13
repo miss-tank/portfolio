@@ -289,6 +289,21 @@
   text-align: justify;
     text-justify: inter-word;
 }
+.buttonn {
+    color: white;
+    font-size: 16px;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+
+
+.button5:hover{
+    background-color: #00000000;
+    color: black;
+}
 
 </style>
 
@@ -314,6 +329,7 @@
   <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Stylesheet
   ================================================== -->
@@ -403,11 +419,11 @@
             <hr>
           </div>
           <div class="row">
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">80</span> </span>
               <h4>Android Development</h4>
             </div>
 
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
+            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">60</span> </span>
               <h4>iOS Development</h4>
             </div>
 
@@ -440,136 +456,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
         </script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
- <!--
-    <div id="template" class="col-lg-3 col-sm-6 hidden">
-      <div class="card hovercard" id="kk">
 
-        <div class="info">
-          <div class="title">
-            <a target="_blank" href="http://scripteden.com/"> </a>
-          </div>
-          <div class="desc">
-
-          </div>
-
-        </div>
-        <div class="bottom">
-         <a id="linkid" class ="li" target="_blank"> <i class="fa fa-github" style="font-size:36px"></i> </a>
-       </div>
-     </div>
-   </div>
-
-
-   <script>
-
-
-    var project_list= [
-    {
-      name : "Contact App",
-      desc: "Android application to Insert new contact through third part app." ,
-      giturl : "https://github.com/miss-tank/Contact-App" ,
-      type : "android" ,
-      color : "#7bc3d1"
-    },
-
-    {
-      name : "Car Show App",
-      desc: "Android application which supports functionality of Long and Short click to view an Image and Website." ,
-      giturl : "https://github.com/miss-tank/Car-Show" ,
-      type : "android" ,
-      color : "#7bc3d1"
-    },
-
-    {
-      name : "15_Puzzle",
-      desc: "A java GUI which creates a random puzzle of 15 and helps to solve it." ,
-      giturl : "https://github.com/miss-tank/15_Puzzle" ,
-      type : "Java" ,
-      color : "#7bc3d1"
-    },
-
-    {
-      name : "SUDOKU",
-      desc: "A java GUI which creates a random SUDOKU puzzle and helps to solve it. " ,
-      giturl : "https://github.com/miss-tank/CS342_Project3" ,
-      type : "Java" ,
-      color : "#7bc3d1"
-    }
-
-     ];
-
-
-    console.log(project_list);
-
-    $.each(project_list,function(i,v)
-    {
-      var clone=$("#template").clone();
-      clone.attr('id','temp2')
-      clone.find(".info .title ").text(v.name);
-      clone.find(".desc").text(v.desc);
-      clone.find(".card").css('background-color',v.color);
-      clone.find(".li").attr('href',v.giturl);
-      clone.removeClass("hidden");
-            //var link = document.getElementById('linkid');
-            //clone.find(".bottom ").text(v.giturl);
-            //link.href="https://www.gmail.com";
-            $("body").append(clone );
-            console.log("this" +v.name);
-
-          });
-        </script>
-
-
-
-
-<div id="template" class="col-lg-3 col-sm-6 hidden">
-            <div class="card hovercard" id="kk">
-
-                <div class="info">
-                    <div class="title">
-                        <a target="_blank" href="http://scripteden.com/"> </a>
-                    </div>
-                    <div class="desc"></div>
-
-                </div>
-                <div class="bottom">
-                   <a id="linkid" class ="li" target="_blank"> <i class="fa fa-github" style="font-size:36px"></i> </a>
-                </div>
-            </div>
-        </div>
-
-<script>
-
-
-
-var project_list= [
-{ name : "Project 1", "desc": "Project 1 desc" , "giturl" : "https://www.google.com" , "type" : "android" , "color" : "yellow"} ,
-{ name : "Project 2", "desc": "Project 2 desc" , "giturl" : "https://www.facebook.com" , "type" : "ios",  "color" : "orange"}];
-
-
-console.log(project_list);
-
-        $.each(project_list,function(i,v)
-        {
-            var clone=$("#template").clone();
-            clone.attr('id','temp2')
-            clone.find(".info .title ").text(v.name);
-            clone.find(".desc").text(v.desc);
-            clone.find(".card").css('background-color',v.color);
-            clone.find(".li").attr('href',v.giturl);
-            clone.removeClass("hidden");
-            //var link = document.getElementById('linkid');
-            //clone.find(".bottom ").text(v.giturl);
-            //link.href="https://www.gmail.com";
-            $("body").append(clone );
-            console.log("this" +v.name);
-
-        });
-</script>
-
-
-
-Portfolio Section -->
+<!--Portfolio Section -->
 
 <div id="portfolio">
   <div class="container">
@@ -597,173 +485,253 @@ Portfolio Section -->
 
                     <div class="col-sm-6 col-md-3 col-lg-3 app">
                       <div class="portfolio-item">
-                        <div class="hover-bg"> <a href="img/project/coffee.jpeg" title="Simple android application containing 2 activities. This app allows user to order the coffee of their style. It manually allows you to enter the amount of ingredients such as Caffine, Whip Cream, etc., which will make your day even better... " rel="prettyPhoto">
+                        <div class="hover-bg"> <a href="img/project/coffee.jpeg" title="Simple android application containing 2 activities. This app allows user to order the coffee of their style. It manually allows you to enter the amount of ingredients such as Caffine, Whip Cream, etc., which will make your day even better!!" rel="prettyPhoto">
                           <div class="hover-text">
                             <h4>Perfect Coffee</h4>
                             <small>Android Application </small> </div>
                             <img src="img/project/coffee.jpeg" class="img-responsive" alt="Perfect Coffee - Android Application"> </a> </div>
+                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Perfect-Coffee','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
+
                           </div>
                         </div>
 
 
+
+
+
+
+
                         <div class="col-sm-6 col-md-3 col-lg-3 app">
                           <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="img/project/car.jpg" title="Project description" rel="prettyPhoto">
+                            <div class="hover-bg"> <a href="img/project/car.jpg" title="The main activity in the app displays a grid. Each grid cell contains a thumbnail picture of a car <br/> above the name of the car’s manufacturer.<br />The thumbnails are separated by thin spaces (5 dp) uniformly on all four sides when the grid is displayed on a Nexus 5 device.   Each grid cell supports two kinds of functionality, depending on whether an app viewer performs a short vs. a long click on a cell.<br>
+<br /> A short click brings up a new activity that shows the entire picture of the selected car on the entire device display. This picture is higher in resolution and bigger than the thumbnail displayed earlier. The user can return to the GridView by selecting the “back” soft button on the phone. However, if the user clicks on the displayed picture instead, a browser activity shows the web site of the car’s manufacturer. For instance, if the app shows a picture of a Honda Civic, the app should bring up the Honda web page from the official Honda website.
+<br />
+<br /> A long click on a grid cell brings up a “context menu” showing the following three options for the car under consideration: (1) View the entire picture (similar to a short click); (2) Show the official web page of the car manufacturer in a new activity; and (3) bring up a list containing the names and addresses of at least three car dealers for the selected manufacturer in greater Chicago area.
+" rel="prettyPhoto">
                               <div class="hover-text">
                                 <h4>Auto Gallery</h4>
-
                                 <small>Android Application</small> </div>
                                 <img src="img/project/car.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Auto-Gallery','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                               </div>
                             </div>
 
 
+
+
+
+
+
+
+
+
+
                             <div class="col-sm-6 col-md-3 col-lg-3 prog">
                           <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="img/project/encryp.jpg" title="Project description" rel="prettyPhoto">
+                            <div class="hover-bg"> <a href="img/project/encryp.jpg" title="All clients will connect to the central server. When sending a message, the client first sends the message to the central server which will then forward the message to the desired client or clients. A clients does not connect directly to another client. Assumption is that, the central server's network information (ip address and port number) is well known by the user of the client program. <br> <br>Each client program will have a display of a list of the persons currently connected to the central server. As a new person connects to the central server, a displayed list of names at each client needs to be updated to reflect the new person joining the group (or chat room). Also as a person disconnects/leaves from the central server, the displayed list of names at each client need to again be updated. The names used for each person must be unique. <br> <bThe client is to show a list of messages received and who sent those messages. Since normal messages can be “stolen” from the packets during transmission, we will use the RSA algorithm to provide Encryption/Decryption of the message. To keep things simple for this project, we will use encryption on a much smaller bit size than is considered “secure” (28 bits as opposed to 1024 bits).
+" rel="prettyPhoto">
                               <div class="hover-text">
                                 <h4>RSA</h4>
 
                                 <small>Java Program</small> </div>
                                 <img src="img/project/encryp.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/RSA','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                               </div>
                             </div>
 
 
+
+
+
+
                                 <div class="col-sm-6 col-md-3 col-lg-3 prog">
                                   <div class="portfolio-item">
-                                    <div class="hover-bg"> <a href="img/project/cta1.jpg" title="Project description" rel="prettyPhoto">
+                                    <div class="hover-bg"> <a href="img/project/cta1.jpg"
+                                        title="The program is to analyze a database of Ridership about Chicago’s CTA system.  Using the SQL Server database of CTA data, and I have allowed the user to investigate the stations and stops in the system, as well as ridership data.
+
+When the application starts, the UI elements are empty.
+<br><br>Step #1:  the user selects File >> Load to load the stations in the left- most listbox.
+<br><br>Step #2:  the user selects a station from the list, and the UI elements of #2 are populated —ridership data as well as stops.
+<br><br>Step #3:  the user selects a stop, and then info about this stop is displayed.  The user also has the ability to display the top-10 stations in terms of ridership.
+
+<br><br>Station name and total ridership; in my design this is invoked through a menu command and displayed.
+" rel="prettyPhoto">
                                       <div class="hover-text">
                                         <h4>CTA Ridership Analysis </h4>
-
-                                        <!--This is One of the UIC class project. In this project I have analysed CTA data from a CSV and showed all the station and the stops associated with it. The data is represented in a form of a GUI which makes the User search for a sepecific station easier. The GUI show the Stops, Station, ColoredLine, Transfer station with that stop, Number of riders using the stop per day. The GUI further classifies the Riders into gender and the day of use.-->
                                         <small>C#, Sql</small> </div>
                                         <img src="img/project/cta1.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                        <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/CTA-Ridership-Analysis','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                       </div>
                                     </div>
 
 
                                     <div class="col-sm-6 col-md-3 col-lg-3  prog">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/divvy.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/divvy.jpg" title="The program is to analyze Divvy bike ridership data,which is being provided as a set of 1 or more CSV files and residing within a single folder. The program should input the data from these 6 files and perform the following analysis: The user inputs the name of the folder, and the program inputs the data from all files in this folder.
+The program then proceeds to perform a variety of computations of % of men riders, % of women riders, average ages, ride duration based on riders.
+<br><br>Sample data set.
+<br>trip_id,bikeid,tripduration,from_station_id,to_station_id,gender,birthyear
+<br>8677704,3808,311,283,47,Male,1984
+<br>8677703,1756,309,322,423,Male,1991
+<br>8677702,253,524,113,340,Male,1973
+<br>.................................
+" rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Divvy Bike Ridership Analysis</h4>
-                                            <!--This is One of the UIC class project. In this project I have analysed Divvy Bike's data from a CSV file. The data used is from 2014-2016. The data is represented in a form of a GUI which makes the User search for a specific ridership. The GUI the total number of riders with respect to their age and gender. The data shown is displayed according to every 6 months. This also helps analyse the time of the day or year the bikes are used more.-->
                                             <small>F# , MySQL</small> </div>
                                             <img src="img/project/divvy.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Divvy_Bikes_Data_Analysis','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
+
+
                                     <div class="col-sm-6 col-md-3 col-lg-3  app">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/cash.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/cash.jpg" title="This project includes 2 Android applications which work together.
+<br><br>The first app, named FedCash, takes as input a year or a date range from an interactive user. This app uses a second app, named TreasuryServ, to access a database maintained by the US Department of the Treasury. The database is found at URL http://treasury.io/, which supports most networking protocols, such as JSON and HTTP Clients.
+<br>In order not to block its user interface during network operations, TreasuryServ defines a bound service in order to access the database. The service in TreasuryServ defines a simple API, described below, for use by FedCash and other apps. Upon receiving an API call from FedCash, TreasuryServ appropriately creates and formats a query to be forwarded to the treasury.io site. After it receives the the site’s response to the query, TreasuryServ will return the requested information back to the FedCash app as the value returned from the API call. For obvious reasons, FedCash must use a worker thread when making API calls on TreasuryServ.
+
+<br><br>The API exposed by TreasuryServ consists of the following three remote methods:
+
+<br>monthlyCash(int) : List(Integer) — This method takes as input an integer denoting a year between 2006 and 2016 inclusive. It returns a list of 12 Integer values denoting the amount of cash the US Government had on hand at the opening of the first working day of each month of the input year.
+
+<br>dailyCash(int, int, int, int) : List(Integer) — This method takes as input 4 integers: a day, a month, a year, and a number of working days. The first 3 integers denote a date in the years 2006–2016. The last integer denotes a number of working days between 5 and 25. This method returns a list of integers denoting the cash the government had on hand at the opening of the input date and subsequent working days, as specified by the fourth input parameter.
+
+<br>yearlyAvg(int) : int — This method takes as input an integer. It returns as output the average of the cash on hand at the opening of each working day in the input year.
+
+<br><br>In addition to the service, TreasuryServ defines an activity whose sole purpose is to display the status of the service. The service could either be (1) not yet bound, (2) bound to one or more clients but idle, (3) bound and running an API method, and (4) destroyed. Notice that a destroyed service could be bound again, if a request comes from a client.
+
+<br><br>App FedCash has two activities. The first activity allows the interactive user to specify a request to be forwarded to TreasuryServ. Define appropriate fields (widgets) allowing a user to select one of the three APIs supported by the service in TreasuryServ and the corresponding input parameters. An additional widget forwards a request to the service. <br>If FedCash was not bound to the service, it will bind to the service at this point. Finally, this activity contains a widget that will unbind FedCash from the service. The second activity consists of two fragments to be displayed side-by-side. This activity is opened by selecting an appropriate button in the first activity. <br>The left fragment contains a list of all the calls made on the service. When a user selects one of the calls, the right fragment will display the result returned by the corresponding API call on the service contained in TreasuryServ." rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Federal Cash Data</h4>
                                             <small>json</small> </div>
                                             <img src="img/project/cash.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Federal-Cash','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
+
+
                                     <div class="col-sm-6 col-md-3 col-lg-3  app">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/chicago.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/chicago.jpg" title="For this project I have designed and coded two new Android apps meant to work together on an Android Nexus 9 tablet running Nougat (API level 25). Here is a short summary of the apps:
+                                                   <br><br>Application A1 consists of a single activity containing two fragments. The first fragment consists of a list naming at least 6 Chicago landmarks. Interactive app users can select one of the landmarks. When this happens, the selected item stays highlighted and the second fragment displays the web page of the highlighted item. <br>This app also defines an options menu with at least two items: (1) exiting A1 and (2) launching the next application, A2. A1 launches A2 by sending a system broadcast. In addition, application A1 maintains an action bar. The action bar shows the name of the application (your choice) and the overflow area.
+
+<br><br>Application A2 is a picture repository. The gallery shows images from each of the landmark listed in application A1. A1 first starts the gallery in A2 by sending a global broadcast; A2 contains a broadcast receiver with appropriate filters to catch A1’s broadcast. When it receives a broadcast, A2 launches the gallery even though A2 was not running before A1 sent the broadcast. <br>In addition, A2 defines a new, dangerous-level permission. The broadcast receiver contained in A2 requires that the broadcast sender (e.g., application A1) own this permission in order to respond to a broadcast." rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Chicago Landmarks</h4>
                                             <small>Threading </small> </div>
                                             <img src="img/project/chicago.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Chicago-Landmarks','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
+
+
                                     <div class="col-sm-6 col-md-3 col-lg-3 prog">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/sudoku.png" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/sudoku.png" title="The purpose of this project is to help the user solve a sudoku game. Users are provided with hints if they are having a hard time moving forward with the game. There are various functions and algorithms included in the game.
+The algorithms in the game are: Single Alg, Hidden Alg, Naked Pair Alg, Locked Candidate Alg. <br>This project includes 6 classes :
+<br><br>Cell.java This class contains information about a cell’s value and whether it is an original value in the puzzle.
+<br><br>Grid.java This class consists of a 9x9 grid of cells and a 9x9 grid of candidate values for those cells.
+<br><br>GameView.java This class makes the front end GUI of the project and includes tiles, buttons, and menu options. It’s purpose is to display information and receive user input.
+<br><br>GamePresenter.java This class handles actions passed to it from GameView by consulting the model and updating the GameView with the result.
+<br><br>GameModel.java This is a simple class which creates the instance of the grid each time it is updated. It also supports the functionality of getting the status of the board.
+<br><br>Sudoku.java This class contains the main method of the project. It instantiates the GameView and GamePresenter.
+
+
+" rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Sudoku</h4>
                                             <small>Threading </small> </div>
                                             <img src="img/project/sudoku.png" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Sudoku','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
+
+
                                         <div class="col-sm-6 col-md-3 col-lg-3  web">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/cta2.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/cta2.jpg" title="This is a Web application which shows the ETA of the train arriving based on the station chosen by the rider. <br> This also uses a database which stores your favourites which makes your life easier and youc ould have access to it easily and not time consuming." rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Transit ETA </h4>
                                             <small>Threading </small> </div>
                                             <img src="img/project/cta2.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/CtaTrainETA','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
 
                                     <div class="col-sm-6 col-md-3 col-lg-3  web">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/food.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/food.jpg" title="This is a Web Application which allows you to search a food restaurant using zipcode and other filters and plots a marker on the map based on the choices." rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Chicago Food Inspection</h4>
                                             <small>JavaScript </small> </div>
                                             <img src="img/project/food.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://miss-tank.github.io/IT202/project3/index.html','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
                                     <div class="col-sm-6 col-md-3 col-lg-3  web">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/weather.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/weather.jpg" title="Simple Weather Web App which shows the weather even in an offline mode." rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Check Weather Offline</h4>
                                             <small>JavaScript </small> </div>
                                             <img src="img/project/weather.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://miss-tank.github.io/IT202/project5/index.html','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
+
                                       <div class="col-sm-6 col-md-3 col-lg-3 app">
                                         <div class="portfolio-item">
-                                          <div class="hover-bg"> <a href="img/project/addcontact.jpg" title="Project description" rel="prettyPhoto">
+                                          <div class="hover-bg"> <a href="img/project/addcontact.jpg" title="The app starts off with a main activity containing a welcome message and a button. <br>Upon pressing the button, the app displays a second activity containing a one-line editor field, a button, and a read-only text view.
+<br><br>The second activity allows the interactive user to enter the first and last names of a person in the editor field. When the button in his activity is pressed, the app switches to a different app for adding a new contact with the specified first and last name. <br>This is a the built-in Contacts app in the device, or a different app with similar functionality that the device’s user installed on the device. Now the device’s user has a chance to enter the new contact’s information. The contacts app returns automatically to the original app when a user saves a new contact. <br>Alternatively, the user may choose to return to your app without saving a new contact by pressing the “back” button. <br>Either way, when the app resumes it will display a message in the read-only text field indicating whether the user had successfully saved the new contact or not.
+
+" rel="prettyPhoto">
                                             <div class="hover-text">
                                               <h4>Add Contacts </h4>
-                                              <!-- The
-app starts off with a main activity containing a welcome message and a button. Upon pressing the button,
-the app displays a second activity containing a one-line editor field, a button, and a read-only text view.
-The second activity allows the interactive user to enter the first and last names of a person in the editor field.
-When the button in his activity is pressed, your app switches to a different app for adding a new contact with
-the specified first and last name. Now the device&rsquo;s user has a
-chance to enter the new contact&rsquo;s information. The contacts app must return automatically to your app
-when a user saves a new contact. Either way, when your app resumes it will display
-a message in the read-only text field indicating whether the user had successfully saved the new contact or
-not.  -->
                                               <small>Android Application</small> </div>
                                               <img src="img/project/addcontact.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Contact-App','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                             </div>
                                           </div>
 
                                     <div class="col-sm-6 col-md-3 col-lg-3  app">
                                       <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/guess.jpg" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-bg"> <a href="img/project/guess.jpg" title="In this game, each of two players sets up a secret sequence of four decimal digits, where each digit is not repeated.<br>For instance, 2017 is a legal sequence, but 2012 is not because the digit 2 is repeated. The two players take turns guessing the sequence of digits of their opponent. Each guess consists of a 4 digit number, without repeated digits. <br>A player responds to an opponent’s guess by specifying the number of digits that were successfully guessed in the correct position and the number of digits that were successfully guessed but in the wrong positions. <br>Thus, if a players chosen number is 2017 and the opponent guesses 1089, the opponent would be told that one digit was guessed correctly in the correct position (i.e., the 0), and another digit was guessed in the wrong position, (i.e., the 1). <br>This application  has two background threads play against each other while also updating the user interface with their moves. <br><br>The first thread to correctly guess the opposing thread’s number wins the game. " rel="prettyPhoto">
                                           <div class="hover-text">
                                             <h4>Guess 4</h4>
                                             <small>Threading</small> </div>
                                             <img src="img/project/guess.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Guess-Four-Android-Game','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                           </div>
                                         </div>
 
 
                                         <div class="col-sm-6 col-md-3 col-lg-3 app">
                                           <div class="portfolio-item">
-                                            <div class="hover-bg"> <a href="img/project/htDesgin.jpg" title="HT Design, Android Application"  rel="prettyPhoto">
+                                            <div class="hover-bg"> <a href="img/project/htDesgin.jpg" title="Simple android application with 2 activities. This application describes the website of htdesigns which consists of the portfolio of a successful Automobile Engineer, Harshad Tank. It also gives a summary of his work through onclick event which will direct user to his website."  rel="prettyPhoto">
                                               <div class="hover-text">
                                                 <h4>HT Designs </h4>
-                                                <!-- Simple android application with 2 activities. This application describes the website htdesigns.in which consists of the portfolio of an automobile engineer Harshad Tank and gives a summary of his work and an onclick event which will link user to his website.-->
                                                 <small>Android Application </small> </div>
                                                 <img src="img/project/htDesgin.jpg" class="img-responsive" title="HT Design, Android Application" alt="HT Design "> </a> </div>
+                                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/HT-Designs','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                               </div>
                                             </div>
 
                                         <div class="col-sm-6 col-md-3 col-lg-3 ios">
                                           <div class="portfolio-item">
-                                            <div class="hover-bg"> <a href="img/project/map.jpg" title="Project description" rel="prettyPhoto">
+                                            <div class="hover-bg"> <a href="img/project/map.jpg" title="An iOS Application which will allow user to check all department locations of University of Illinois at Chicago and navigate them from their current location by integrating Google Maps." rel="prettyPhoto">
                                               <div class="hover-text">
                                                 <h4>UIC Navigation</h4>
                                                 <small>iOS Application </small> </div>
                                                 <img src="img/project/map.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
                                               </div>
                                             </div>
                                           </div>
