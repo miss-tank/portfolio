@@ -1,253 +1,258 @@
 <style>
+  #template {
+    display: none;
+  }
 
-#template
-{
-  display: none;
-}
-.card {
-  padding-top: 20px;
-  margin: 10px 0 20px 0;
-  background-color: rgba(214, 224, 226, 0.2);
-  border-top-width: 0;
-  border-bottom-width: 2px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  .card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-.card .card-heading {
-  padding: 0 20px;
-  margin: 0;
-}
+  .card .card-heading {
+    padding: 0 20px;
+    margin: 0;
+  }
 
-.card .card-heading.simple {
-  font-size: 20px;
-  font-weight: 300;
-  color: #777;
-  border-bottom: 1px solid #e5e5e5;
-}
+  .card .card-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+  }
 
-.card .card-heading.image img {
-  display: inline-block;
-  width: 46px;
-  height: 46px;
-  margin-right: 15px;
-  vertical-align: top;
-  border: 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
+  .card .card-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
 
-.card .card-heading.image .card-heading-header {
-  display: inline-block;
-  vertical-align: top;
-}
+  .card .card-heading.image .card-heading-header {
+    display: inline-block;
+    vertical-align: top;
+  }
 
-.card .card-heading.image .card-heading-header h3 {
-  margin: 0;
-  font-size: 14px;
-  line-height: 16px;
-  color: #262626;
-}
+  .card .card-heading.image .card-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+  }
 
-.card .card-heading.image .card-heading-header span {
-  font-size: 12px;
-  color: #999999;
-}
+  .card .card-heading.image .card-heading-header span {
+    font-size: 12px;
+    color: #999999;
+  }
 
-.card .card-body {
-  padding: 0 20px;
-  margin-top: 20px;
-}
+  .card .card-body {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
 
-.card .card-media {
-  padding: 0 20px;
-  margin: 0 -14px;
-}
+  .card .card-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+  }
 
-.card .card-media img {
-  max-width: 100%;
-  max-height: 100%;
-}
+  .card .card-media img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-.card .card-actions {
-  min-height: 30px;
-  padding: 0 20px 20px 20px;
-  margin: 20px 0 0 0;
-}
+  .card .card-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+  }
 
-.card .card-comments {
-  padding: 20px;
-  margin: 0;
-  background-color: #f8f8f8;
-}
+  .card .card-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
 
-.card .card-comments .comments-collapse-toggle {
-  padding: 0;
-  margin: 0 20px 12px 20px;
-}
+  .card .card-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+  }
 
-.card .card-comments .comments-collapse-toggle a,
-.card .card-comments .comments-collapse-toggle span {
-  padding-right: 5px;
-  overflow: hidden;
-  font-size: 12px;
-  color: #999;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  .card .card-comments .comments-collapse-toggle a,
+  .card .card-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-.card-comments .media-heading {
-  font-size: 13px;
-  font-weight: bold;
-}
+  .card-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+  }
 
-.card.people {
-  position: relative;
-  display: inline-block;
-  width: 170px;
-  height: 300px;
-  padding-top: 0;
-  margin-left: 20px;
-  overflow: hidden;
-  vertical-align: top;
-}
+  .card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+  }
 
-.card.people:first-child {
-  margin-left: 0;
-}
+  .card.people:first-child {
+    margin-left: 0;
+  }
 
-.card.people .card-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 170px;
-  height: 150px;
-  background-color: #ffffff;
-}
+  .card.people .card-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+  }
 
-.card.people .card-top.green {
-  background-color: #53a93f;
-}
+  .card.people .card-top.green {
+    background-color: #53a93f;
+  }
 
-.card.people .card-top.blue {
-  background-color: #427fed;
-}
+  .card.people .card-top.blue {
+    background-color: #427fed;
+  }
 
-.card.people .card-info {
-  position: absolute;
-  top: 150px;
-  display: inline-block;
-  width: 100%;
-  height: 101px;
-  overflow: hidden;
-  background: #ffffff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  .card.people .card-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-.card.people .card-info .title {
-  display: block;
-  margin: 8px 14px 0 14px;
-  overflow: hidden;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 18px;
-  color: #404040;
-}
+  .card.people .card-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+  }
 
-.card.people .card-info .desc {
-  display: block;
-  margin: 8px 14px 0 14px;
-  overflow: hidden;
-  font-size: 12px;
-  line-height: 16px;
-  color: #737373;
-  text-overflow: ellipsis;
-}
+  .card.people .card-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+  }
 
-.card.people .card-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  padding: 10px 20px;
-  line-height: 29px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  .card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-.card.hovercard {
-  position: relative;
-  padding-top: 0;
-  overflow: hidden;
-  text-align: center;
-  background-color: rgba(214, 224, 226, 0.2);
-}
+  .card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+  }
 
-.card.hovercard .cardheader {
-  background-size: cover;
-  height: 180px;
-}
+  .card.hovercard .cardheader {
+    background-size: cover;
+    height: 180px;
+  }
 
-.card.hovercard .avatar {
-  position: relative;
-  top: -50px;
-  margin-bottom: -50px;
-}
+  .card.hovercard .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+  }
 
-.card.hovercard .avatar img {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-  max-height: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.5);
-}
+  .card.hovercard .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+  }
 
-.card.hovercard .info {
-  padding: 4px 8px 10px;
-}
+  .card.hovercard .info {
+    padding: 4px 8px 10px;
+  }
 
-.card.hovercard .info .title {
-  margin-bottom: 4px;
-  font-size: 24px;
-  line-height: 1;
-  color: #262626;
-  vertical-align: middle;
-}
+  .card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+  }
 
-.card.hovercard .info .desc {
-  overflow: hidden;
-  font-size: 12px;
-  line-height: 20px;
-  color: #737373;
-  text-overflow: ellipsis;
-}
+  .card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+  }
 
-.card.hovercard .bottom {
-  padding: 0 20px;
-  margin-bottom: 17px;
-}
+  .card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+  }
 
-.btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
+  .btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 18px;
+  }
 
-.button {
-    background-color: #4CAF50; /* Green */
+  .button {
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -256,61 +261,79 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-}
+  }
 
-.button5 {
+  .button5 {
     background-color: #000000;
     color: white;
     border: 1px solid #000000;
-}
+  }
 
-.button5:hover {
+  .button5:hover {
     background-color: #00000000;
     color: white;
-}
-.hed
-{
-  font-size: 105px;
-  margin-top: -208px;
-  font-weight: 500;
-  letter-spacing: -2px;
-  margin-left: 350;
-  color: #ffffff99;
-  letter-spacing: -2px;
-  -webkit-box-sizing: content-box;
-  font-family: 'Rajdhani', sans-serif;
-}
+  }
 
-.introPara
-{
-  text-align: justify;
+  .hed {
+    font-size: 105px;
+    margin-top: -208px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-left: 350;
+    color: #ffffff99;
+    letter-spacing: -2px;
+    -webkit-box-sizing: content-box;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .introPara {
+    text-align: justify;
     text-justify: inter-word;
-}
-.buttonn {
+  }
+
+  .buttonn {
     color: white;
     font-size: 16px;
-}
+  }
 
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */
-.button5 {background-color: #555555;} /* Black */
+  .button2 {
+    background-color: #008CBA;
+  }
+
+  /* Blue */
+  .button3 {
+    background-color: #f44336;
+  }
+
+  /* Red */
+  .button4 {
+    background-color: #e7e7e7;
+    color: black;
+  }
+
+  /* Gray */
+  .button5 {
+    background-color: #555555;
+  }
+
+  /* Black */
 
 
-.button5:hover{
+  .button5:hover {
     background-color: #00000000;
     color: black;
-}
-
+  }
 </style>
 
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -318,7 +341,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-<!-- Favicons
+  <!-- Favicons
   ================================================== -->
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
@@ -326,195 +349,212 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Stylesheet
+  <!-- Stylesheet
   ================================================== -->
-  <link rel="stylesheet" type="text/css"  href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Rajdhani" rel="stylesheet">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Rajdhani" rel="stylesheet">
+</head>
 
-    <!-- Header -->
-    <header id="header">
-      <div class="intro">
-        <div class="container">
-          <div class="row">
-            <div class="intro-text">
-              <h1 class="head">Ankita Tank</h1>
-              <p>Android & Web Developer</p>
-              <a href="#about" class="btn btn-default btn-lg page-scroll">More About Me</a>
-            </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Header -->
+  <header id="header">
+    <div class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1 class="head">Ankita Tank</h1>
+            <p>Android & Web Developer</p>
+            <a href="#about" class="btn btn-default btn-lg page-scroll">More About Me</a>
           </div>
         </div>
       </div>
-      </header>
-      <!-- Navigation -->
-      <div id="nav">
-        <nav class="navbar navbar-custom">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-              <a class="navbar-brand page-scroll" href="#page-top">Ankita Tank</a> </div>
-
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                  <li class="hidden"> <a href="#page-top"></a> </li>
-                  <li> <a class="page-scroll" href="#about">About</a> </li>
-                  <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-                  <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-                  <li> <a class="page-scroll" href="#resume">Resume</a> </li>
-                  <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <!-- About Section -->
-        <div id="about">
-          <div class="container">
-            <div class="section-title text-center center">
-              <h2>ABOUT ME</h2>
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12 text-center"><img src="me.jpg" class="img-responsive"></div>
-              <div class="col-md-8 col-md-offset-2">
-                <div class="about-text">
-<br>
-
-<div class="introPara">
-
-
-      <p>I am a Computer Science Graduate working at Morningstar as an Associate Engineer. Creative and highly organised candidate with adequate knowledge about Object Oriented Programming, Design Patterns and Android App Development. I have also successfully demonstrated problem solving skills and a proven track record with strong attention to detail. </p>
-
-      <p>I love structure, order and stand for quality. I also love spending time on fixing little details and optimizing Web and Android applications. I work well in a team; As the saying goes: 'Two heads are better than one'. </p>
     </div>
+  </header>
+  <!-- Navigation -->
+  <div id="nav">
+    <nav class="navbar navbar-custom">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i
+              class="fa fa-bars"></i> </button>
+          <a class="navbar-brand page-scroll" href="#page-top">Ankita Tank</a> </div>
 
-                  <p class="text-center"><a class="btn btn-primary" href="Ankita Tank-Resume.pdf" download><i class="fa fa-download"></i> Click here to download my Resume</a></p>
-                </div>
-              </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden"> <a href="#page-top"></a> </li>
+            <li> <a class="page-scroll" href="#about">About</a> </li>
+            <li> <a class="page-scroll" href="#skills">Skills</a> </li>
+            <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+            <li> <a class="page-scroll" href="#resume">Resume</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>ABOUT ME</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center"><img src="me.jpg" class="img-responsive"></div>
+        <div class="col-md-8 col-md-offset-2">
+          <div class="about-text">
+            <br>
+
+            <div class="introPara">
+              <p>I am a Computer Science Graduate working at Morningstar as an Associate Engineer. Creative and highly
+                organised candidate with adequate knowledge about Object Oriented Programming, Design Patterns and
+                Android App Development. I have also successfully demonstrated problem solving skills and a proven track
+                record with strong attention to detail. </p>
+
+              <p>I love structure, order and stand for quality. I also love spending time on fixing little details and
+                optimizing Web and Android applications. I work well in a team; As the saying goes: 'Two heads are
+                better than one'. </p>
             </div>
+
+            <p class="text-center"><a class="btn btn-primary" href="Ankita Tank-Resume.pdf" download><i
+                  class="fa fa-download"></i> Click here to download my Resume</a></p>
           </div>
         </div>
-        <!-- Skills Section -->
-        <div id="skills" class="text-center">
-          <div class="section-title center text-center ">
-            <h2>SKILLS</h2>
-            <hr>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>Android Development</h4>
-            </div>
-
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-              <h4>iOS Development</h4>
-            </div>
-
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>SQL</h4>
-            </div>
-               <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>Java , C++ </h4>
-            </div>
-
-
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-              <h4>C# , F# , C</h4>
-            </div>
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
-              <h4>HTML5, CSS3, PHP </h4>
-            </div>
-
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-              <h4>JavaScript,jQuery</h4>
-            </div>
-
-            <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-              <h4>ASP.NET</h4>
-            </div>
-
-
-          </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-<!--Portfolio Section -->
-
-<div id="portfolio">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>PROTFOLIO</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Skills Section -->
+  <div id="skills" class="text-center">
+    <div class="section-title center text-center ">
+      <h2>SKILLS</h2>
       <hr>
     </div>
-        <div class="categories">
-          <ul class="cat">
-            <li>
-              <ol class="type">
-                <li><a href="#" data-filter="*" class="active">All</a></li>
-                <li><a href="#" data-filter=".web">Web Design</a></li>
-                <li><a href="#" data-filter=".app">Android App Development</a></li>
-                <li><a href="#" data-filter=".ios">iOS App Development</a></li>
-                <li><a href="#" data-filter=".prog">Programming Paradigm</a></li>
-              </ol>
-            </li>
-          </ul>
-          <div class="clearfix"></div>
-        </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span>
+        </span>
+        <h4>Android Development</h4>
+      </div>
 
-        <div class="row">
-          <div class="portfolio-items">
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span>
+        </span>
+        <h4>iOS Development</h4>
+      </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 app">
-                      <div class="portfolio-item">
-                        <div class="hover-bg"> <a href="img/project/coffee.jpeg" title="Simple android application containing 2 activities. This app allows user to order the coffee of their style. It manually allows you to enter the amount of ingredients such as Caffine, Whip Cream, etc., which will make your day even better!!" rel="prettyPhoto">
-                          <div class="hover-text">
-                            <h4>Perfect Coffee</h4>
-                            <small>Android Application </small> </div>
-                            <img src="img/project/coffee.jpeg" class="img-responsive" alt="Perfect Coffee - Android Application"> </a> </div>
-                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Perfect-Coffee','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-
-                          </div>
-                        </div>
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span>
+        </span>
+        <h4>SQL</h4>
+      </div>
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span>
+        </span>
+        <h4>Java , C++ </h4>
+      </div>
 
 
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span>
+        </span>
+        <h4>C# , F# , C</h4>
+      </div>
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span>
+        </span>
+        <h4>HTML5, CSS3, PHP </h4>
+      </div>
+
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span>
+        </span>
+        <h4>JavaScript,jQuery</h4>
+      </div>
+
+      <div class="col-md-3 col-sm-4 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span>
+        </span>
+        <h4>ASP.NET</h4>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <!--Portfolio Section -->
+
+  <div id="portfolio">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>PROTFOLIO</h2>
+        <hr>
+      </div>
+      <div class="categories">
+        <ul class="cat">
+          <li>
+            <ol class="type">
+              <li><a href="#" data-filter="*" class="active">All</a></li>
+              <li><a href="#" data-filter=".web">Web Design</a></li>
+              <li><a href="#" data-filter=".app">Android App Development</a></li>
+              <li><a href="#" data-filter=".ios">iOS App Development</a></li>
+              <li><a href="#" data-filter=".prog">Programming Paradigm</a></li>
+            </ol>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="row">
+        <div class="portfolio-items">
+
+          <div class="col-sm-6 col-md-3 col-lg-3 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/coffee.jpeg"
+                  title="Simple android application containing 2 activities. This app allows user to order the coffee of their style. It manually allows you to enter the amount of ingredients such as Caffine, Whip Cream, etc., which will make your day even better!!"
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Perfect Coffee</h4>
+                    <small>Android Application </small>
+                  </div>
+                  <img src="img/project/coffee.jpeg" class="img-responsive" alt="Perfect Coffee - Android Application">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Perfect-Coffee','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+
+            </div>
+          </div>
 
 
 
 
 
-                        <div class="col-sm-6 col-md-3 col-lg-3 app">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="img/project/car.jpg" title="The main activity in the app displays a grid. Each grid cell contains a thumbnail picture of a car <br/> above the name of the car’s manufacturer.<br />The thumbnails are separated by thin spaces (5 dp) uniformly on all four sides when the grid is displayed on a Nexus 5 device.   Each grid cell supports two kinds of functionality, depending on whether an app viewer performs a short vs. a long click on a cell.<br>
+
+
+          <div class="col-sm-6 col-md-3 col-lg-3 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/car.jpg" title="The main activity in the app displays a grid. Each grid cell contains a thumbnail picture of a car <br/> above the name of the car’s manufacturer.<br />The thumbnails are separated by thin spaces (5 dp) uniformly on all four sides when the grid is displayed on a Nexus 5 device.   Each grid cell supports two kinds of functionality, depending on whether an app viewer performs a short vs. a long click on a cell.<br>
 <br /> A short click brings up a new activity that shows the entire picture of the selected car on the entire device display. This picture is higher in resolution and bigger than the thumbnail displayed earlier. The user can return to the GridView by selecting the “back” soft button on the phone. However, if the user clicks on the displayed picture instead, a browser activity shows the web site of the car’s manufacturer. For instance, if the app shows a picture of a Honda Civic, the app should bring up the Honda web page from the official Honda website.
 <br />
 <br /> A long click on a grid cell brings up a “context menu” showing the following three options for the car under consideration: (1) View the entire picture (similar to a short click); (2) Show the official web page of the car manufacturer in a new activity; and (3) bring up a list containing the names and addresses of at least three car dealers for the selected manufacturer in greater Chicago area.
 " rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Auto Gallery</h4>
-                                <small>Android Application</small> </div>
-                                <img src="img/project/car.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Auto-Gallery','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                              </div>
-                            </div>
+                  <div class="hover-text">
+                    <h4>Auto Gallery</h4>
+                    <small>Android Application</small>
+                  </div>
+                  <img src="img/project/car.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Auto-Gallery','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
 
@@ -526,28 +566,31 @@
 
 
 
-                            <div class="col-sm-6 col-md-3 col-lg-3 prog">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="img/project/encryp.jpg" title="All clients will connect to the central server. When sending a message, the client first sends the message to the central server which will then forward the message to the desired client or clients. A clients does not connect directly to another client. Assumption is that, the central server's network information (ip address and port number) is well known by the user of the client program. <br> <br>Each client program will have a display of a list of the persons currently connected to the central server. As a new person connects to the central server, a displayed list of names at each client needs to be updated to reflect the new person joining the group (or chat room). Also as a person disconnects/leaves from the central server, the displayed list of names at each client need to again be updated. The names used for each person must be unique. <br> <bThe client is to show a list of messages received and who sent those messages. Since normal messages can be “stolen” from the packets during transmission, we will use the RSA algorithm to provide Encryption/Decryption of the message. To keep things simple for this project, we will use encryption on a much smaller bit size than is considered “secure” (28 bits as opposed to 1024 bits).
+          <div class="col-sm-6 col-md-3 col-lg-3 prog">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/encryp.jpg" title="All clients will connect to the central server. When sending a message, the client first sends the message to the central server which will then forward the message to the desired client or clients. A clients does not connect directly to another client. Assumption is that, the central server's network information (ip address and port number) is well known by the user of the client program. <br> <br>Each client program will have a display of a list of the persons currently connected to the central server. As a new person connects to the central server, a displayed list of names at each client needs to be updated to reflect the new person joining the group (or chat room). Also as a person disconnects/leaves from the central server, the displayed list of names at each client need to again be updated. The names used for each person must be unique. <br> <bThe client is to show a list of messages received and who sent those messages. Since normal messages can be “stolen” from the packets during transmission, we will use the RSA algorithm to provide Encryption/Decryption of the message. To keep things simple for this project, we will use encryption on a much smaller bit size than is considered “secure” (28 bits as opposed to 1024 bits).
 " rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>RSA</h4>
+                  <div class="hover-text">
+                    <h4>RSA</h4>
 
-                                <small>Java Program</small> </div>
-                                <img src="img/project/encryp.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/RSA','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                              </div>
-                            </div>
+                    <small>Java Program</small>
+                  </div>
+                  <img src="img/project/encryp.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/RSA','_blank','resizable=yes')"> GIT REPOSITORY </p>
+              </button>
+            </div>
+          </div>
 
 
 
 
 
 
-                                <div class="col-sm-6 col-md-3 col-lg-3 prog">
-                                  <div class="portfolio-item">
-                                    <div class="hover-bg"> <a href="img/project/cta1.jpg"
-                                        title="The program is to analyze a database of Ridership about Chicago’s CTA system.  Using the SQL Server database of CTA data, and I have allowed the user to investigate the stations and stops in the system, as well as ridership data.
+          <div class="col-sm-6 col-md-3 col-lg-3 prog">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/cta1.jpg" title="The program is to analyze a database of Ridership about Chicago’s CTA system.  Using the SQL Server database of CTA data, and I have allowed the user to investigate the stations and stops in the system, as well as ridership data.
 
 When the application starts, the UI elements are empty.
 <br><br>Step #1:  the user selects File >> Load to load the stations in the left- most listbox.
@@ -556,18 +599,22 @@ When the application starts, the UI elements are empty.
 
 <br><br>Station name and total ridership; in my design this is invoked through a menu command and displayed.
 " rel="prettyPhoto">
-                                      <div class="hover-text">
-                                        <h4>CTA Ridership Analysis </h4>
-                                        <small>C#, Sql</small> </div>
-                                        <img src="img/project/cta1.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                        <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/CTA-Ridership-Analysis','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                      </div>
-                                    </div>
+                  <div class="hover-text">
+                    <h4>CTA Ridership Analysis </h4>
+                    <small>C#, Sql</small>
+                  </div>
+                  <img src="img/project/cta1.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/CTA-Ridership-Analysis','_blank','resizable=yes')">
+                GIT REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3  prog">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/divvy.jpg" title="The program is to analyze Divvy bike ridership data,which is being provided as a set of 1 or more CSV files and residing within a single folder. The program should input the data from these 6 files and perform the following analysis: The user inputs the name of the folder, and the program inputs the data from all files in this folder.
+          <div class="col-sm-6 col-md-3 col-lg-3  prog">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/divvy.jpg" title="The program is to analyze Divvy bike ridership data,which is being provided as a set of 1 or more CSV files and residing within a single folder. The program should input the data from these 6 files and perform the following analysis: The user inputs the name of the folder, and the program inputs the data from all files in this folder.
 The program then proceeds to perform a variety of computations of % of men riders, % of women riders, average ages, ride duration based on riders.
 <br><br>Sample data set.
 <br>trip_id,bikeid,tripduration,from_station_id,to_station_id,gender,birthyear
@@ -576,19 +623,24 @@ The program then proceeds to perform a variety of computations of % of men rider
 <br>8677702,253,524,113,340,Male,1973
 <br>.................................
 " rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Divvy Bike Ridership Analysis</h4>
-                                            <small>F# , MySQL</small> </div>
-                                            <img src="img/project/divvy.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Divvy_Bikes_Data_Analysis','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+                  <div class="hover-text">
+                    <h4>Divvy Bike Ridership Analysis</h4>
+                    <small>F# , MySQL</small>
+                  </div>
+                  <img src="img/project/divvy.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Divvy_Bikes_Data_Analysis','_blank','resizable=yes')">
+                GIT REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3  app">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/cash.jpg" title="This project includes 2 Android applications which work together.
+          <div class="col-sm-6 col-md-3 col-lg-3  app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/cash.jpg"
+                  title="This project includes 2 Android applications which work together.
 <br><br>The first app, named FedCash, takes as input a year or a date range from an interactive user. This app uses a second app, named TreasuryServ, to access a database maintained by the US Department of the Treasury. The database is found at URL http://treasury.io/, which supports most networking protocols, such as JSON and HTTP Clients.
 <br>In order not to block its user interface during network operations, TreasuryServ defines a bound service in order to access the database. The service in TreasuryServ defines a simple API, described below, for use by FedCash and other apps. Upon receiving an API call from FedCash, TreasuryServ appropriately creates and formats a query to be forwarded to the treasury.io site. After it receives the the site’s response to the query, TreasuryServ will return the requested information back to the FedCash app as the value returned from the API call. For obvious reasons, FedCash must use a worker thread when making API calls on TreasuryServ.
 
@@ -602,36 +654,47 @@ The program then proceeds to perform a variety of computations of % of men rider
 
 <br><br>In addition to the service, TreasuryServ defines an activity whose sole purpose is to display the status of the service. The service could either be (1) not yet bound, (2) bound to one or more clients but idle, (3) bound and running an API method, and (4) destroyed. Notice that a destroyed service could be bound again, if a request comes from a client.
 
-<br><br>App FedCash has two activities. The first activity allows the interactive user to specify a request to be forwarded to TreasuryServ. Define appropriate fields (widgets) allowing a user to select one of the three APIs supported by the service in TreasuryServ and the corresponding input parameters. An additional widget forwards a request to the service. <br>If FedCash was not bound to the service, it will bind to the service at this point. Finally, this activity contains a widget that will unbind FedCash from the service. The second activity consists of two fragments to be displayed side-by-side. This activity is opened by selecting an appropriate button in the first activity. <br>The left fragment contains a list of all the calls made on the service. When a user selects one of the calls, the right fragment will display the result returned by the corresponding API call on the service contained in TreasuryServ." rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Federal Cash Data</h4>
-                                            <small>json</small> </div>
-                                            <img src="img/project/cash.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Federal-Cash','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+<br><br>App FedCash has two activities. The first activity allows the interactive user to specify a request to be forwarded to TreasuryServ. Define appropriate fields (widgets) allowing a user to select one of the three APIs supported by the service in TreasuryServ and the corresponding input parameters. An additional widget forwards a request to the service. <br>If FedCash was not bound to the service, it will bind to the service at this point. Finally, this activity contains a widget that will unbind FedCash from the service. The second activity consists of two fragments to be displayed side-by-side. This activity is opened by selecting an appropriate button in the first activity. <br>The left fragment contains a list of all the calls made on the service. When a user selects one of the calls, the right fragment will display the result returned by the corresponding API call on the service contained in TreasuryServ."
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Federal Cash Data</h4>
+                    <small>json</small>
+                  </div>
+                  <img src="img/project/cash.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Federal-Cash','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3  app">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/chicago.jpg" title="For this project I have designed and coded two new Android apps meant to work together on an Android Nexus 9 tablet running Nougat (API level 25). Here is a short summary of the apps:
+          <div class="col-sm-6 col-md-3 col-lg-3  app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/chicago.jpg"
+                  title="For this project I have designed and coded two new Android apps meant to work together on an Android Nexus 9 tablet running Nougat (API level 25). Here is a short summary of the apps:
                                                    <br><br>Application A1 consists of a single activity containing two fragments. The first fragment consists of a list naming at least 6 Chicago landmarks. Interactive app users can select one of the landmarks. When this happens, the selected item stays highlighted and the second fragment displays the web page of the highlighted item. <br>This app also defines an options menu with at least two items: (1) exiting A1 and (2) launching the next application, A2. A1 launches A2 by sending a system broadcast. In addition, application A1 maintains an action bar. The action bar shows the name of the application (your choice) and the overflow area.
 
-<br><br>Application A2 is a picture repository. The gallery shows images from each of the landmark listed in application A1. A1 first starts the gallery in A2 by sending a global broadcast; A2 contains a broadcast receiver with appropriate filters to catch A1’s broadcast. When it receives a broadcast, A2 launches the gallery even though A2 was not running before A1 sent the broadcast. <br>In addition, A2 defines a new, dangerous-level permission. The broadcast receiver contained in A2 requires that the broadcast sender (e.g., application A1) own this permission in order to respond to a broadcast." rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Chicago Landmarks</h4>
-                                            <small>Threading </small> </div>
-                                            <img src="img/project/chicago.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Chicago-Landmarks','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+<br><br>Application A2 is a picture repository. The gallery shows images from each of the landmark listed in application A1. A1 first starts the gallery in A2 by sending a global broadcast; A2 contains a broadcast receiver with appropriate filters to catch A1’s broadcast. When it receives a broadcast, A2 launches the gallery even though A2 was not running before A1 sent the broadcast. <br>In addition, A2 defines a new, dangerous-level permission. The broadcast receiver contained in A2 requires that the broadcast sender (e.g., application A1) own this permission in order to respond to a broadcast."
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Chicago Landmarks</h4>
+                    <small>Threading </small>
+                  </div>
+                  <img src="img/project/chicago.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Chicago-Landmarks','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3 prog">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/sudoku.png" title="The purpose of this project is to help the user solve a sudoku game. Users are provided with hints if they are having a hard time moving forward with the game. There are various functions and algorithms included in the game.
+          <div class="col-sm-6 col-md-3 col-lg-3 prog">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/sudoku.png" title="The purpose of this project is to help the user solve a sudoku game. Users are provided with hints if they are having a hard time moving forward with the game. There are various functions and algorithms included in the game.
 The algorithms in the game are: Single Alg, Hidden Alg, Naked Pair Alg, Locked Candidate Alg. <br>This project includes 6 classes :
 <br><br>Cell.java This class contains information about a cell’s value and whether it is an original value in the puzzle.
 <br><br>Grid.java This class consists of a 9x9 grid of cells and a 9x9 grid of candidate values for those cells.
@@ -642,371 +705,382 @@ The algorithms in the game are: Single Alg, Hidden Alg, Naked Pair Alg, Locked C
 
 
 " rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Sudoku</h4>
-                                            <small>Threading </small> </div>
-                                            <img src="img/project/sudoku.png" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Sudoku','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+                  <div class="hover-text">
+                    <h4>Sudoku</h4>
+                    <small>Threading </small>
+                  </div>
+                  <img src="img/project/sudoku.png" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Sudoku','_blank','resizable=yes')"> GIT REPOSITORY
+                </p> </button>
+            </div>
+          </div>
 
 
 
-                                        <div class="col-sm-6 col-md-3 col-lg-3  web">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/cta2.jpg" title="This is a Web application which shows the ETA of the train arriving based on the station chosen by the rider. <br> This also uses a database which stores your favourites which makes your life easier and youc ould have access to it easily and not time consuming." rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Transit ETA </h4>
-                                            <small>Threading </small> </div>
-                                            <img src="img/project/cta2.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/CtaTrainETA','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+          <div class="col-sm-6 col-md-3 col-lg-3  web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/cta2.jpg"
+                  title="This is a Web application which shows the ETA of the train arriving based on the station chosen by the rider. <br> This also uses a database which stores your favourites which makes your life easier and youc ould have access to it easily and not time consuming."
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Transit ETA </h4>
+                    <small>Threading </small>
+                  </div>
+                  <img src="img/project/cta2.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/CtaTrainETA','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3  web">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/food.jpg" title="This is a Web Application which allows you to search a food restaurant using zipcode and other filters and plots a marker on the map based on the choices." rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Chicago Food Inspection</h4>
-                                            <small>JavaScript </small> </div>
-                                            <img src="img/project/food.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://miss-tank.github.io/IT202/project3/index.html','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+          <div class="col-sm-6 col-md-3 col-lg-3  web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/food.jpg"
+                  title="This is a Web Application which allows you to search a food restaurant using zipcode and other filters and plots a marker on the map based on the choices."
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Chicago Food Inspection</h4>
+                    <small>JavaScript </small>
+                  </div>
+                  <img src="img/project/food.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://miss-tank.github.io/IT202/project3/index.html','_blank','resizable=yes')">
+                GIT REPOSITORY </p> </button>
+            </div>
+          </div>
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3  web">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/weather.jpg" title="Simple Weather Web App which shows the weather even in an offline mode." rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Check Weather Offline</h4>
-                                            <small>JavaScript </small> </div>
-                                            <img src="img/project/weather.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://miss-tank.github.io/IT202/project5/index.html','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
+          <div class="col-sm-6 col-md-3 col-lg-3  web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/weather.jpg"
+                  title="Simple Weather Web App which shows the weather even in an offline mode." rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Check Weather Offline</h4>
+                    <small>JavaScript </small>
+                  </div>
+                  <img src="img/project/weather.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://miss-tank.github.io/IT202/project5/index.html','_blank','resizable=yes')">
+                GIT REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
-                                      <div class="col-sm-6 col-md-3 col-lg-3 app">
-                                        <div class="portfolio-item">
-                                          <div class="hover-bg"> <a href="img/project/addcontact.jpg" title="The app starts off with a main activity containing a welcome message and a button. <br>Upon pressing the button, the app displays a second activity containing a one-line editor field, a button, and a read-only text view.
+          <div class="col-sm-6 col-md-3 col-lg-3 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/addcontact.jpg" title="The app starts off with a main activity containing a welcome message and a button. <br>Upon pressing the button, the app displays a second activity containing a one-line editor field, a button, and a read-only text view.
 <br><br>The second activity allows the interactive user to enter the first and last names of a person in the editor field. When the button in his activity is pressed, the app switches to a different app for adding a new contact with the specified first and last name. <br>This is a the built-in Contacts app in the device, or a different app with similar functionality that the device’s user installed on the device. Now the device’s user has a chance to enter the new contact’s information. The contacts app returns automatically to the original app when a user saves a new contact. <br>Alternatively, the user may choose to return to your app without saving a new contact by pressing the “back” button. <br>Either way, when the app resumes it will display a message in the read-only text field indicating whether the user had successfully saved the new contact or not.
 
 " rel="prettyPhoto">
-                                            <div class="hover-text">
-                                              <h4>Add Contacts </h4>
-                                              <small>Android Application</small> </div>
-                                              <img src="img/project/addcontact.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Contact-App','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                            </div>
-                                          </div>
+                  <div class="hover-text">
+                    <h4>Add Contacts </h4>
+                    <small>Android Application</small>
+                  </div>
+                  <img src="img/project/addcontact.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Contact-App','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
 
-                                    <div class="col-sm-6 col-md-3 col-lg-3  app">
-                                      <div class="portfolio-item">
-                                        <div class="hover-bg"> <a href="img/project/guess.jpg" title="In this game, each of two players sets up a secret sequence of four decimal digits, where each digit is not repeated.<br>For instance, 2017 is a legal sequence, but 2012 is not because the digit 2 is repeated. The two players take turns guessing the sequence of digits of their opponent. Each guess consists of a 4 digit number, without repeated digits. <br>A player responds to an opponent’s guess by specifying the number of digits that were successfully guessed in the correct position and the number of digits that were successfully guessed but in the wrong positions. <br>Thus, if a players chosen number is 2017 and the opponent guesses 1089, the opponent would be told that one digit was guessed correctly in the correct position (i.e., the 0), and another digit was guessed in the wrong position, (i.e., the 1). <br>This application  has two background threads play against each other while also updating the user interface with their moves. <br><br>The first thread to correctly guess the opposing thread’s number wins the game. " rel="prettyPhoto">
-                                          <div class="hover-text">
-                                            <h4>Guess 4</h4>
-                                            <small>Threading</small> </div>
-                                            <img src="img/project/guess.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                            <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/Guess-Four-Android-Game','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                          </div>
-                                        </div>
-
-
-                                        <div class="col-sm-6 col-md-3 col-lg-3 app">
-                                          <div class="portfolio-item">
-                                            <div class="hover-bg"> <a href="img/project/htDesgin.jpg" title="Simple android application with 2 activities. This application describes the website of htdesigns which consists of the portfolio of a successful Automobile Engineer, Harshad Tank. It also gives a summary of his work through onclick event which will direct user to his website."  rel="prettyPhoto">
-                                              <div class="hover-text">
-                                                <h4>HT Designs </h4>
-                                                <small>Android Application </small> </div>
-                                                <img src="img/project/htDesgin.jpg" class="img-responsive" title="HT Design, Android Application" alt="HT Design "> </a> </div>
-                                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/HT-Designs','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                              </div>
-                                            </div>
-
-                                        <div class="col-sm-6 col-md-3 col-lg-3 ios">
-                                          <div class="portfolio-item">
-                                            <div class="hover-bg"> <a href="img/project/map.jpg" title="An iOS Application which will allow user to check all department locations of University of Illinois at Chicago and navigate them from their current location by integrating Google Maps." rel="prettyPhoto">
-                                              <div class="hover-text">
-                                                <h4>UIC Navigation</h4>
-                                                <small>iOS Application </small> </div>
-                                                <img src="img/project/map.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                                                <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "  onclick="window.open('https://github.com/miss-tank/UIC_Navigation_iOS','_blank','resizable=yes')" >  GIT REPOSITORY </p> </button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Achievements Section -->
-
-                                    <!-- Resume Section -->
-                                    <div id="resume" class="text-center">
-                                      <div class="container">
-                                        <div class="">
-                                          <h1>EXPERIENCE</h1>
-                                          <hr>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-lg-12">
-                                            <ul class="timeline">
+          <div class="col-sm-6 col-md-3 col-lg-3  app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/guess.jpg"
+                  title="In this game, each of two players sets up a secret sequence of four decimal digits, where each digit is not repeated.<br>For instance, 2017 is a legal sequence, but 2012 is not because the digit 2 is repeated. The two players take turns guessing the sequence of digits of their opponent. Each guess consists of a 4 digit number, without repeated digits. <br>A player responds to an opponent’s guess by specifying the number of digits that were successfully guessed in the correct position and the number of digits that were successfully guessed but in the wrong positions. <br>Thus, if a players chosen number is 2017 and the opponent guesses 1089, the opponent would be told that one digit was guessed correctly in the correct position (i.e., the 0), and another digit was guessed in the wrong position, (i.e., the 1). <br>This application  has two background threads play against each other while also updating the user interface with their moves. <br><br>The first thread to correctly guess the opposing thread’s number wins the game. "
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>Guess 4</h4>
+                    <small>Threading</small>
+                  </div>
+                  <img src="img/project/guess.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/Guess-Four-Android-Game','_blank','resizable=yes')">
+                GIT REPOSITORY </p> </button>
+            </div>
+          </div>
 
 
-                                              <li>
-                                                <div class="timeline-image">
-                                                  <h4>Sept 2018 <br>
-                                                   <br>
-                                                  (Full-Time) </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>Morningstar</h4>
-                                                    <h4 class="subheading">Associate Engineer</h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                     <p>&#9824; Design and develop Java, .NET, and Objective-C &nbsp;&nbsp;&nbsp;&nbsp;applications to be flexible, scalable, and robust; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collaborate on object-oriented designs and domain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modeling.</p>
-                                                      <p>&#9824; Write automated functional and unit tests for &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;technology stack. Create a platform for globalization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of our web and mobile solutions.</p>
-                                                       <p>&#9824; Act as a software guardian by taking ownership of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nonfunctional elements, architectural direction, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quality of the code, while addressing technical debt.</p>
-                                                              
-                                                  </div>
-                                                </div>
-                                              </li>
+          <div class="col-sm-6 col-md-3 col-lg-3 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/htDesgin.jpg"
+                  title="Simple android application with 2 activities. This application describes the website of htdesigns which consists of the portfolio of a successful Automobile Engineer, Harshad Tank. It also gives a summary of his work through onclick event which will direct user to his website."
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>HT Designs </h4>
+                    <small>Android Application </small>
+                  </div>
+                  <img src="img/project/htDesgin.jpg" class="img-responsive" title="HT Design, Android Application"
+                    alt="HT Design ">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/HT-Designs','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-3 ios">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/project/map.jpg"
+                  title="An iOS Application which will allow user to check all department locations of University of Illinois at Chicago and navigate them from their current location by integrating Google Maps."
+                  rel="prettyPhoto">
+                  <div class="hover-text">
+                    <h4>UIC Navigation</h4>
+                    <small>iOS Application </small>
+                  </div>
+                  <img src="img/project/map.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+              <button class="buttonn button5 col-sm-12 col-md-12 col-lg-12  "
+                onclick="window.open('https://github.com/miss-tank/UIC_Navigation_iOS','_blank','resizable=yes')"> GIT
+                REPOSITORY </p> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Achievements Section -->
+
+  <!-- Resume Section -->
+  <div id="resume" class="text-center">
+    <div class="container">
+      <div class="">
+        <h1>EXPERIENCE</h1>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
 
 
-                                              
+            <li>
+              <div class="timeline-image">
+                <h4>Sept 2018 <br>
+                  <br>
+                  (Full-Time) </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Morningstar</h4>
+                  <h4 class="subheading">Associate Engineer</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>&#9824; Design and develop Java, .NET, and Objective-C &nbsp;&nbsp;&nbsp;&nbsp;applications to be
+                    flexible, scalable, and robust; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collaborate on object-oriented designs
+                    and domain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modeling.</p>
+                  <p>&#9824; Write automated functional and unit tests for
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;technology stack. Create a platform for
+                    globalization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of our web and mobile
+                    solutions.</p>
+                  <p>&#9824; Act as a software guardian by taking ownership of
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nonfunctional elements, architectural direction, and
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quality of the code, while addressing technical
+                    debt.</p>
 
-                                              <li class="timeline-inverted">
-                                                <div class="timeline-image">
-                                                  <h4>Jan 2018 <br>
-                                                    - <br>
-                                                  July 2018 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>Chicago Transit Authority</h4>
-                                                    <h4 class="subheading">Android Development Intern</h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-
-                                                     <p> &#x265B; Develop a background service for Android devices &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;which signifies their continual connectivity to the CTA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;network as means of laying groundwork for future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deployment of tablets to CTA Bus Service &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Management.</p>
-                                                    <p>&#x265B; Develop CTA’s Santa Printer App by integrating critical &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;permissions, camera api ,and customization special &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event bitmaps, allowing CTA riders travelling on special &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event trains to capture, customize, and print images.</p>
-
-
-                                                  </div>
-                                                </div>
-                                              </li>
-
-
-                                              <li>
-                                                <div class="timeline-image">
-                                                  <h4>Sept 2017 <br>
-                                                    - <br>
-                                                  Dec 2017 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>Chicago Transit Authority</h4>
-                                                    <h4 class="subheading">Service Bulletin Webform Implementation Intern</h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                    <p>&#10132;Assisted Planning and Operations Department to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;develop a web framework which creates reroute changes &nbsp;&nbsp;&nbsp;&nbsp; for the CTA buses.</p>
-                                                      <p>&#10132;Developed and implemented algorithms to generate &nbsp;&nbsp;&nbsp;&nbsp;PDF based on the multiple routes entered and detects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;routes which share the same reroute.</p>
-                                                           <p>&#10132;Manage the Oracle database which is used while loading &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous
-                                                              bulletin data.</p>
-                                                  </div>
-                                                </div>
-                                              </li>
-
-                                              <li class="timeline-inverted">
-                                                <div class="timeline-image">
-                                                  <h4>Jan 2017 <br>
-                                                    - <br>
-                                                  Aug 2017 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>Academic Computing and Communications Center</h4>
-                                                    <h4 class="subheading">Junior Web Developer</h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                    <p> &#x27A0; Provided maintenance and development of bug fixes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and patch sets for existing web applications.</p>
-                                                    <p> &#x27A0; Written well designed, testable, efficient code by using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best software development practices.</p>
-                                                    <p> &#x27A0; Creating website layout/user interfaces by using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standard HTML5/CSS3 practices.</p>
-                                                    <p> &#x27A0; Integrating data from various back-end services and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;databases</p>
-                                                  </div>
-                                                </div>
-                                              </li>
-
-
-                                              <li>
-                                                <div class="timeline-image">
-                                                  <h4>June 2016 <br>
-                                                    - <br>
-                                                  Sept 2017 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>Academic Computing and Communications Center</h4>
-                                                    <h4 class="subheading">Computer Specialist 1 </h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                    <p>&#x261B; Installed software, modified and repaired hardware and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolved technical issues.</p>
-                                                    <p>&#x261B; Set up equipment for employee use, performing or &nbsp;&nbsp;ensuring proper installation of different operating &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;systems, and appropriate software. </p>
-                                                  </div>
-                                                </div>
-                                              </li>
-
-                                              <li class="timeline-inverted">
-                                                <div class="timeline-image">
-                                                  <h4>Sept 2015 <br>
-                                                    - <br>
-                                                  May 2017 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>University of Illinois at Chicago</h4>
-                                                    <h4 class="subheading">Teaching Assistant</h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                    <p>&diams; Assist with labs and discussion sections, hold office  &nbsp;&nbsp;&nbsp;&nbsp;hours, grade class projects.Attend weekly course staff &nbsp;&nbsp;&nbsp;&nbsp;meetings, and helped maintain the course website.</p>
-
-                                                   <p> &diams; Managed grading, proctored exams, as well as promptly &nbsp;&nbsp;&nbsp;&nbsp;resolved students' questions pertaining to Computer &nbsp;&nbsp;&nbsp;&nbsp;Science 300 level classes.</p>
-                                                  </div>
-                                                </div>
-                                              </li>
-
-
-
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="container">
-                                        <div class="section-title center">
-                                          <h1>EDUCATION</h1>
-                                          <hr>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-lg-12">
-                                            <ul class="timeline">
-
-                                              <!-- Education Section-->
-
-                                              <li>
-                                                <div class="timeline-image">
-                                                  <h4>Aug 2014 <br>
-                                                    - <br>
-                                                  May 2018 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>University of Illinois at Chicago</h4>
-                                                    <h4 class="subheading">Undergraduate - Computer Science </h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                    <p>Chicago, IL</p>
-                                                  </div>
-                                                </div>
-                                              </li>
-                                              <li class="timeline-inverted">
-                                                <div class="timeline-image">
-                                                  <h4>2012 <br>
-                                                    - <br>
-                                                  2014 </h4>
-                                                </div>
-                                                <div class="timeline-panel">
-                                                  <div class="timeline-heading">
-                                                    <h4>Thakur College of Science and Commerce (TCSC) </h4>
-                                                    <h4 class="subheading">Area of focus - Computer Science</h4>
-                                                  </div>
-                                                  <div class="timeline-body">
-                                                    <p>Mumbai, India</p>
-                                                  </div>
-                                                </div>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Contact Section -->
-                                    <div id="contact" class="text-center">
-                                      <div class="container">
-                                        <div class="section-title center">
-                                          <h2>CONTACT</h2>
-                                          <hr>
-                                        </div>
-                                        <div class="col-md-8 col-md-offset-2">
-                                          <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-                                            <p>410 S Morgan St ,<br>
-                                            Chicago, IL 60607</p>
-                                          </div>
-                                          <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-                                            <p>tankankita02@gmail.com</p>
-                                          </div>
-                                          <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-                                            <p> +1(312)509-2142</p>
-                                          </div>
-                                          <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-8 col-md-offset-2">
-
-
-                                            <div id="success"></div>
-                                            <button  type="submit" class="button button5" onclick="sendEmail()">Leave me a message</button>
+                </div>
+              </div>
+            </li>
 
 
 
 
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Jan 2018 <br>
+                  - <br>
+                  July 2018 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Chicago Transit Authority</h4>
+                  <h4 class="subheading">Android Development Intern</h4>
+                </div>
+                <div class="timeline-body">
+
+                  <p> &#x265B; Develop a background service for Android devices
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;which signifies their continual connectivity to the CTA
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;network as means of laying groundwork for future
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deployment of tablets to CTA Bus Service
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Management.</p>
+                  <p>&#x265B; Develop CTA’s Santa Printer App by integrating critical
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;permissions, camera api ,and customization special
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event bitmaps, allowing CTA riders travelling on special
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event trains to capture, customize, and print images.</p>
+
+
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="timeline-image">
+                <h4>Sept 2017 <br>
+                  - <br>
+                  Dec 2017 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Chicago Transit Authority</h4>
+                  <h4 class="subheading">Service Bulletin Webform Implementation Intern</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>&#10132;Assisted Planning and Operations Department to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;develop a web
+                    framework which creates reroute changes &nbsp;&nbsp;&nbsp;&nbsp; for the CTA buses.</p>
+                  <p>&#10132;Developed and implemented algorithms to generate &nbsp;&nbsp;&nbsp;&nbsp;PDF based on the
+                    multiple routes entered and detects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;routes which share the same
+                    reroute.</p>
+                  <p>&#10132;Manage the Oracle database which is used while loading
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous
+                    bulletin data.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Jan 2017 <br>
+                  - <br>
+                  Aug 2017 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Academic Computing and Communications Center</h4>
+                  <h4 class="subheading">Junior Web Developer</h4>
+                </div>
+                <div class="timeline-body">
+                  <p> &#x27A0; Provided maintenance and development of bug fixes
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and patch sets for existing web applications.</p>
+                  <p> &#x27A0; Written well designed, testable, efficient code by using
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best software development practices.</p>
+                  <p> &#x27A0; Creating website layout/user interfaces by using
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standard HTML5/CSS3 practices.</p>
+                  <p> &#x27A0; Integrating data from various back-end services and
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;databases</p>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="timeline-image">
+                <h4>June 2016 <br>
+                  - <br>
+                  Sept 2017 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Academic Computing and Communications Center</h4>
+                  <h4 class="subheading">Computer Specialist 1 </h4>
+                </div>
+                <div class="timeline-body">
+                  <p>&#x261B; Installed software, modified and repaired hardware and
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolved technical issues.</p>
+                  <p>&#x261B; Set up equipment for employee use, performing or &nbsp;&nbsp;ensuring proper installation
+                    of different operating &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;systems, and appropriate software.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Sept 2015 <br>
+                  - <br>
+                  May 2017 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>University of Illinois at Chicago</h4>
+                  <h4 class="subheading">Teaching Assistant</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>&diams; Assist with labs and discussion sections, hold office &nbsp;&nbsp;&nbsp;&nbsp;hours, grade
+                    class projects.Attend weekly course staff &nbsp;&nbsp;&nbsp;&nbsp;meetings, and helped maintain the
+                    course website.</p>
+
+                  <p> &diams; Managed grading, proctored exams, as well as promptly &nbsp;&nbsp;&nbsp;&nbsp;resolved
+                    students' questions pertaining to Computer &nbsp;&nbsp;&nbsp;&nbsp;Science 300 level classes.</p>
+                </div>
+              </div>
+            </li>
 
 
 
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section-title center">
+        <h1>EDUCATION</h1>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+
+            <!-- Education Section-->
+
+            <li>
+              <div class="timeline-image">
+                <h4>Aug 2014 <br>
+                  - <br>
+                  May 2018 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>University of Illinois at Chicago</h4>
+                  <h4 class="subheading">Undergraduate - Computer Science </h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Chicago, IL</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>2012 <br>
+                  - <br>
+                  2014 </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Thakur College of Science and Commerce (TCSC) </h4>
+                  <h4 class="subheading">Area of focus - Computer Science</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mumbai, India</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
 
 
-</form>
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/easypiechart.js"></script>
+  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+  <script type="text/javascript" src="js/jquery.counterup.js"></script>
+  <script type="text/javascript" src="js/waypoints.js"></script>
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="js/contact_me.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 
+</body>
 
-<script type="text/javascript">
-
-function sendEmail()
-{
-  console.log("sending emial");
-    window.location = "mailto:tankankita02@gmail.com?subject=Email From Website.";
-}
-
-</script>
-
-                                          <div class="social">
-                                            <ul>
-                                              <li><a href="https://www.linkedin.com/in/ankitatank/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                              <li><a href="https://github.com/miss-tank" target="_blank"><i class="fa fa-github"></i></a></li>
-                                              <li><a href="https://www.facebook.com/ankita.tank.71" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                              <li><a href="https://www.instagram.com/miss__tank/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div id="footer">
-                                      <div class="container text-center">
-                                        <div class="fnav">
-                                          <p>Copyright &copy; 2017 Ankita Tank</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-                                    <script type="text/javascript" src="js/bootstrap.js"></script>
-                                    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-                                    <script type="text/javascript" src="js/easypiechart.js"></script>
-                                    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-                                    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-                                    <script type="text/javascript" src="js/jquery.counterup.js"></script>
-                                    <script type="text/javascript" src="js/waypoints.js"></script>
-                                    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-                                    <script type="text/javascript" src="js/contact_me.js"></script>
-                                    <script type="text/javascript" src="js/main.js"></script>
-
-
-                                  </body>
-                                  </html>
+</html>
